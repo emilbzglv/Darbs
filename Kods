@@ -1,0 +1,22 @@
+# 1. Lietotāja ievade
+vards = input("Ievadiet savu vārdu: ")
+skaitli = []
+
+# Palūdzam lietotājam ievadīt piecus skaitļus
+print("Ievadiet piecus skaitļus pa vienam:")
+for i in range(5):
+    skaitlis = float(input(f"Skaitlis {i + 1}: "))
+    skaitli.append(skaitlis)
+
+# 2. Datu apstrāde
+# Izdrukājiet sākotnējo sarakstu
+print(f"\nSveiks, {vards}!")
+print(f"Jūsu sākotnējais saraksts: {skaitli}")
+
+# Sakārtojam sarakstu
+sakartots = sorted(skaitli)
+print(f"Sakārtots saraksts: {sakartots}")
+
+# Aprēķinām vidējo vērtību
+average = sum(skaitli) / len(skaitli)
+print(f"Vidējā vērtība: {average:.1f}")
